@@ -6,9 +6,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(BASE_DIR / ".env")
 
-POSTGRES_ENGINE = os.getenv("DB_ENGINE")
-POSTGRES_NAME = os.getenv("DB_NAME")
-POSTGRES_USER = os.getenv("DB_USER")
-POSTGRES_PASSWORD = os.getenv("DB_PWD")
-POSTGRES_HOST = os.getenv("DB_HOST")
-POSTGRES_PORT = os.getenv("DB_PORT")
+DB_NAME = os.getenv("SUPABASE_DATABASE")
+DB_HOST = os.getenv("SUPABASE_HOST")
+DB_PORT = os.getenv("SUPABASE_PORT")
+DB_USER = os.getenv("SUPABASE_USER")
+DB_PASSWORD = os.getenv("SUPABASE_PWD")
+DB_ANON = os.getenv("SUPABASE_ANON")
+DB_JWT = os.getenv("SUPABASE_JWT")

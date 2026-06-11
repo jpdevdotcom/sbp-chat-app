@@ -33,6 +33,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "api",
+    "conversation",
+    "message",
+    "membership",
     "rest_framework",
     "corsheaders",
     'django.contrib.admin',
